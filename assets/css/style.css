@@ -504,7 +504,22 @@ hr:before {
 	color: #000000;
 	border-color: #000000;
 }
-
+#avatar {
+    height: 185px;
+    width: 247px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+#fullscreen {
+    z-index: -999;
+    min-height: 90%;
+    min-width: 800px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
 
 
 @media (max-width: 1680px) {
