@@ -7,14 +7,31 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
 		<link rel="stylesheet" href="assets/fonts/CarrdIcons.min.css" />
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+
 		<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Just+Another+Hand" />
 		<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+		<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" /> -->
+
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.3.1/simplex/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
 		<link rel="stylesheet" href="assets/css/style.css" />
+
 		<noscript>
 			<link rel="stylesheet" href="assets/css/noscript.css" />
 		</noscript>
+
+		<style>
+		body {
+		  background-image: url('./assets/bg.png');
+		  background-repeat: no-repeat;
+		  background-attachment: fixed;
+		  background-size: 100% 100%;
+		}
+		</style>
+
 	</head>
 	<body class="is-loading">
 		<div id="wrapper">
@@ -29,13 +46,212 @@
 					<!-- About Section -->
 					<section id="about-section">
 						<p id="text05">About Me</p>
-						<p id="text02">I am a Computer Engineer currently doing my Master's in Artificial Intelligence(AI). I'm passionate about Machine Learning with more interest towards Deep Learning research.
+						<p id="text02">I am a Computer Engineer currently doing my Master's in Artificial Intelligence(AI).<br>	I'm passionate about Machine Learning with more interest towards Deep Learning research.
 							<br></br>
 							My hobbies include: Gaming - Breaking/Reading Code - Watching movies/TV shows.
 							<br></br>
 							My passions include: AI - Computers - Philanthropy.
 						</p>
 					</section>
+
+					<!--====== SLIDER PART START ======-->
+					<section id="slider-section" class="slider_area">
+					    <div class="container text-center">
+					        <div class="row mx-auto my-auto">
+					            <div id="myCarousel" class="carousel slide w-100" data-ride="carousel">
+					                <div class="carousel-inner w-100" role="listbox">
+					                    <div class="carousel-item active">
+					                        <div class="col-lg-4 col-md-6">
+												<div class="item-card">
+													<div class="upper-half">
+														<h3 id="text_p">Deep Learning Project</h3>
+														<p id="text_abstract">Comparative study of cGAN and U-Net which were both implemented to reconstruct missing parts of face images. Models are trained and tested on a dataset of celebrity faces.</p>
+													</div>
+													<div class="lower-half">
+														<!-- <div class="report-btn">Report</div> -->
+														<a class="code-link" href="https://github.com/sudhakaranjain/DL_Project" target="_blank">
+															<div style="font-size: 21px;" class="code-btn">
+																<i style="margin-right:10px" class="fa fa-github-square fa-2x" aria-hidden="true"></i>
+															</div>
+														</a>
+														<a class="report-link" href="./pdf/reports/DL_report.pdf" target="_blank">
+															<div class="report-btn">
+																<span style="margin-right:10px">Report</span>
+																<i style="font-size:20px" class="fa">&#xf1c1;</i>
+															</div>
+														</a>							
+													</div>
+												</div>
+					                        </div>
+					                    </div>
+					                    <div class="carousel-item">
+					                        <div class="col-lg-4 col-md-6">
+												<div class="item-card">
+													<div class="upper-half">
+														<h3 id="text_p">3D_DEN</h3>
+														<p id="text_abstract">A dynamic neural architectural model that keeps on learning new 3D objects without catastrophically forgetting known ones. Trained and tested this model on ModelNet40 dataset.</p>
+													</div>
+													<div class="lower-half">
+														<a class="code-link" href="https://github.com/sudhakaranjain/3D_DEN" target="_blank">
+															<div style="font-size: 21px;" class="code-btn">
+																<i style="margin-right:10px" class="fa fa-github-square fa-2x" aria-hidden="true"></i>
+															</div>
+														</a>
+														<!-- <a class="report-link" href="" target="_blank">
+															<div class="report-btn">
+																<span style="margin-right:10px">Report</span>
+																<i style="font-size:20px" class="fa">&#xf1c1;</i>
+															</div>
+														</a>
+														<a class="paper-link" href="" target="_blank">
+															<div class="paper-btn">
+																<span style="margin-right:10px">Paper</span>
+																<i style="font-size:20px" class="fa">&#xf1c1;</i>
+															</div>
+														</a>	 -->							
+													</div>
+												</div>
+					                        </div>
+					                    </div>
+					                    <div class="carousel-item">
+					                        <div class="col-lg-4 col-md-6">
+												<div class="item-card">
+													<div class="upper-half">
+														<h3 id="text_p">Machine Learning Project </h3>
+														<p id="text_abstract">Comparative study betweeen performances of CACLA and SPG Reinforcement Learning algorithms on BipedalWalker-v2 environment from OpenAI Gym platform.</p>
+													</div>
+													<div class="lower-half">
+														<a class="code-link" href="https://github.com/sudhakaranjain/ML_Project" target="_blank">
+															<div style="font-size: 21px;" class="code-btn">
+																<i style="margin-right:10px" class="fa fa-github-square fa-2x" aria-hidden="true"></i>
+															</div>
+														</a>
+														<a class="report-link" href="./pdf/reports/ML_report.pdf" target="_blank">
+															<div class="report-btn">
+																<span style="margin-right:10px">Report</span>
+																<i style="font-size:20px" class="fa">&#xf1c1;</i>
+															</div>
+														</a>							
+													</div>
+												</div>
+					                        </div>
+					                    </div>
+					                    <div class="carousel-item">
+					                        <div class="col-lg-4 col-md-6">
+					                            <div class="item-card">
+													<div class="upper-half">
+														<h3 id="text_p">Handwriting Recognition</h3>
+														<p id="text_abstract">Automated handwriting recognition system for Hebrew scripts. System pipeline performs pre-processing, segmenting lines/words, training classifier, and creating text files with predictions.</p>
+													</div>
+													<div class="lower-half">
+														<a class="code-link" href="https://github.com/sudhakaranjain/Handwriting_recognition" target="_blank">
+															<div style="font-size: 21px;" class="code-btn">
+																<i style="margin-right:10px" class="fa fa-github-square fa-2x" aria-hidden="true"></i>
+															</div>
+														</a>
+														<a class="report-link" href="./pdf/reports/HW_report.pdf" target="_blank">
+															<div class="report-btn">
+																<span style="margin-right:10px">Report</span>
+																<i style="font-size:20px" class="fa">&#xf1c1;</i>
+															</div>
+														</a>								
+													</div>
+												</div>
+					                        </div>
+					                    </div>
+					                    <div class="carousel-item">
+					                        <div class="col-lg-4 col-md-6">
+					                            <div class="item-card">
+													<div class="upper-half">
+														<h3 id="text_p">Robotics For AI</h3>
+														<p id="text_abstract">A Mobile domestic service robot navigates in an unknown environment, approaches a table, recognizes objects and grasps a specific one.</p>
+													</div>
+													<div class="lower-half">
+														<a class="code-link" href="https://github.com/sudhakaranjain/Robotics_AI" target="_blank">
+															<div style="font-size: 21px;" class="code-btn">
+																<i style="margin-right:10px" class="fa fa-github-square fa-2x" aria-hidden="true"></i>
+															</div>
+														</a>
+														<a class="report-link" href="./pdf/reports/Robotics_AI_report.pdf" target="_blank">
+															<div class="report-btn">
+																<span style="margin-right:10px">Report</span>
+																<i style="font-size:20px" class="fa">&#xf1c1;</i>
+															</div>
+														</a>									
+													</div>
+												</div>
+					                        </div>
+					                    </div>
+					                    <div class="carousel-item">
+					                        <div class="col-lg-4 col-md-6">
+					                            <div class="item-card">
+													<div class="upper-half">
+														<h3 id="text_p">Pratibhojana</h3>
+														<p id="text_abstract">Nutrition Recommendation App for women with Voice Alarm. Helps create a full-day meal plan recommended based on bio-medical data of user.</p>
+													</div>
+													<div class="lower-half">
+														<a class="code-link" href="https://github.com/sudhakaranjain/Pratibhojana" target="_blank">
+															<div style="font-size: 21px;" class="code-btn">
+																<i style="margin-right:10px" class="fa fa-github-square fa-2x" aria-hidden="true"></i>
+															</div>
+														</a>
+														<a class="report-link" href="./pdf/reports/Pratibhojana_report.pdf" target="_blank">
+															<div class="report-btn">
+																<span style="margin-right:10px">Report</span>
+																<i style="font-size:20px" class="fa">&#xf1c1;</i>
+															</div>
+														</a>
+														<a class="paper-link" href="./pdf/papers/Pratibhojana_paper.pdf" target="_blank">
+															<div class="paper-btn">
+																<span style="margin-right:10px">Paper</span>
+																<i style="font-size:20px" class="fa">&#xf1c1;</i>
+															</div>
+														</a>									
+													</div>
+												</div>
+					                        </div>
+					                    </div>
+					                    <div class="carousel-item">
+					                        <div class="col-lg-4 col-md-6">
+					                            <div class="item-card">
+													<div class="upper-half">
+														<h3 id="text_p">User Models</h3>
+														<p id="text_abstract">An Eye-tracking Speller for diabled with word completion/prediction capability for writing sentence.</p>
+													</div>
+													<div class="lower-half">
+														<a class="code-link" href="https://github.com/sudhakaranjain/User_models" target="_blank">
+															<div style="font-size: 21px;" class="code-btn">
+																<i style="margin-right:10px" class="fa fa-github-square fa-2x" aria-hidden="true"></i>
+															</div>
+														</a>
+														<a class="report-link" href="./pdf/reports/User_models_report.pdf" target="_blank">
+															<div class="report-btn">
+																<span style="margin-right:10px">Report</span>
+																<i style="font-size:20px" class="fa">&#xf1c1;</i>
+															</div>
+														</a>									
+													</div>
+												</div>
+					                        </div>
+					                    </div>
+					                </div>
+									
+					            </div>
+								<div class="nav-section">
+									<a class="arrow-prev" href="#myCarousel" role="button" data-slide="prev">
+										<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+										<span class="sr-only">Previous</span>
+									</a>
+									<a class="arrow-next" href="#myCarousel" role="button" data-slide="next">
+										<span class="carousel-control-next-icon" aria-hidden="true"></span>
+										<span class="sr-only">Next</span>
+									</a>
+								</div>
+					        </div>
+					    </div>
+
+					</section>
+
 					<!-- Footer -->
 					<footer id="footer">
 						<hr id="divider01" />
@@ -43,6 +259,7 @@
 							<li><a href="#home" class="button n01">Home</a></li>
 							<li><a href="#about" class="button n02">About</a></li>
 							<li><a href="Sudhakaran_resume.pdf" class="button n03">Resume</a></li>
+							<li><a href="#slider" class="button n04">Projects</a></li>
 						</ul>
 						<a href="https://www.linkedin.com/in/sudhakaran-jain"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
 						<a href="https://github.com/sudhakaranjain"><i class="fa fa-github-square fa-2x" aria-hidden="true"></i></a>
@@ -52,6 +269,10 @@
 			</div>
 		</div>
 		<script type="text/javascript" src="assets/js/main.js"></script>
-		<!-- <script type="text/javascript" src="assets/js/colorize.js"></script> -->
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	    <script src="assets/js/carousel.js"></script>
 	</body>
+
+
 </html>
