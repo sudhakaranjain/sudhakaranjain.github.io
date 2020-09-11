@@ -318,7 +318,7 @@ p br + br {
 }
 
 #text_abstract {
-	font-family: 'Playfair Display';
+	font-family: "Times New Roman", Times, serif;
 	width: calc(100% + 0.325rem);
 	font-size: 0.8em;
 	/*line-height: 1.2;*/
